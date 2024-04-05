@@ -36,7 +36,7 @@ export default function TaskListItem({
           <input
             type="text"
             value={taskTitle}
-            onChange={() => setTaskTitle(e.target.value)}
+            onChange={(e) => setTaskTitle(e.target.value)}
           />
           <button onClick={handleSave}>save</button>
           <button onClick={handleCancel}>cancel</button>
